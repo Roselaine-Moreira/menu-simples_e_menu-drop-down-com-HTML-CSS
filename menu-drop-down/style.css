@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.menu{
+list-style: none;
+margin: 20px 0 0 350px;
+border: 1px solid #990000;
+float: left;/*flutuando a esquerda*/
+}
+
+.menu li{
+position: relative;
+float: left;
+border-right: 1px solid #990000;
+padding: 5px;
+background-color: #ff0000;
+height: 28px;
+line-height: 28px;/*centralizar verticalmente o menu*/
+}
+
+.menu li a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li ul{
+  position: absolute;
+  top: 28px;/*28px de distância do topo*/
+  left: -20px;
+  display: none;/*para esconder a lista do menu drop-down*/
+}
+
+/*técnica para aparecer a lista quando passar o mouse por cima*/
+.menu li:hover ul, .menu li ul li:hover ul, .menu li.over ul, .menu li ul li.over ul{/*pega todas as propriedades que já foram utilizadas antes e vai dar um display block, exibir em bloco os sub menus*/
+  display: block;
+}
+
+/*menu que vai ser aberto*/
+.menu li ul li{
+border: 1px solid #990000;
+display: block;
+width: 150px;
+height: 25px;
+line-height:25px ;
+}

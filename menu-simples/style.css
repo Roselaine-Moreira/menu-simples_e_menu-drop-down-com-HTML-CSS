@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li{
+  display: inline;/*o menu que era em lista estão alinhados agora*/
+  padding: 6px;
+  background-color: #8850c9;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid  #8850c9;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+ul li:hover{
+  background-color: aqua;
+}
+
+ul li a{
+  text-decoration: none;/*tira o sublinhado do link*/
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
